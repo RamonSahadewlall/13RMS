@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <title>13 RMS - About Us</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu-logo">
+            <div class="menu-icon" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="close-icon" onclick="toggleNav()">
+                &times;
+            </div>
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="missionandvision.html">Our Mission & Vision</a></li>
+                <li><a href="ourapps.html">Explore Our Apps</a></li>
+            </ul>
+            <a href="contact.html"><button class="button">Contact Us</button></a>
+        </nav>
+    </header>  
+    <section>
+        <h1 class="hero-h1">We are a technology company that specializes in research, development and production of technology.</h1>
+    </section>
+    <section class="mobile-bg-img">
+        <img src="images/about.jpg" class="hero-img" alt="">
+    </section>
+
+    <footer class="footer">
+        <div>
+            <a href="index.html"><img src="images/logo.png" class="footer-logo"></a>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="missionandvision.html">Our Mission & Vision</a></li>
+                <li><a href="ourapps.html">Explore Our Apps</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <section class="copyright">
+        <p>© 2024 13 RMS B. V.</p>
+        <div class="copyright-links">
+            <p><a href="#"> Privacy Policy </a></p>
+            <p><a href="#">Terms</a></p>
+            <p><a href="#"> Cookie Policy </a></p>
+        </div>
+    </section>
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('nav');
+            var menuIcon = document.querySelector('.menu-icon');
+            var closeIcon = document.querySelector('.close-icon');
+
+            nav.classList.toggle('show');
+
+            if (nav.classList.contains('show')) {
+                menuIcon.style.display = 'none';
+                closeIcon.style.display = 'block';
+            } else {
+                menuIcon.style.display = 'block';
+                closeIcon.style.display = 'none';
+            }
+        }
+    </script>    
+</body>
+</html>
